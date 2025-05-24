@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+
+// Q4 
+var m1=0;
+var m2=0;
+var m3=0;
+
+
+function myAverage(m1, m2, m3) {
+    return (m1 + m2 + m3) / 3;
+}
+
+
+function myPercentage(m1, m2, m3) {
+    let totalMarks = 300;
+    let obtainedMarks = m1 + m2 + m3;
+    return (obtainedMarks / totalMarks) * 100;
+}
+
+
+function mainFunction() {
+    let subject1 = +prompt("Enter marks of Subject 1:");
+    let subject2 = +prompt("Enter marks of Subject 2:");
+    let subject3 = +prompt("Enter marks of Subject 3:");
+
+    let average = getAverage(subject1, subject2, subject3);
+    let percentage = getPercentage(subject1, subject2, subject3);
+
+    console.log("Average Marks: " + average);
+    console.log("Percentage: " + percentage + "%");
+}
+
+
+mainFunction();
+
+// Q8
+
+function inMeter(km) {
+    return km*1000;
+}
+
+function inInches(km) {
+    return km * 39370.1;
+}
+
+function inFeet(km) {
+    return km*3280.84
+}
+
+function inCentimeter(km) {
+    return km* 100000
+}
+ 
+function mainFunctionii() {
+    
+    console.log(km + " km = " + toMeter(km) + " meters");
+    console.log(km + " km = " + toFeet(km) + " feet");
+    console.log(km + " km = " + toInches(km) + " inches");
+    console.log(km + " km = " + toCentimeter(km) + " centimeters");
+}
+
+mainFunctionii();
+
+    </script>
+</body>
+</html>

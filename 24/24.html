@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Q1 
+        var date = new Date();
+        console.log(date);
+
+        // Q2 
+        let months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        let now = new Date();
+        let currentMonth = months[now.getMonth()];
+        alert("Current month: " + currentMonth);
+
+        //   Q3 
+        day = ['sun', 'mon', 'tue ', 'wed', 'thur', 'fri', 'sat']
+        var curDate = new Date();
+        let currentDay = day[curDate.getDay()];
+        alert(`Todays is : ${currentDay}`);
+
+        // Q4 
+        var date = new Date();
+        let funday = date.getDay()
+        console.log(funday);
+        if (funday == 0 || funday == 6) {
+            alert("It's Fun day")
+        }
+
+        // Q7 
+        let currentTime = new Date();
+        let currentHours = date.getHours()
+        console.log(currentHours);
+        if (currentHours < 12) {
+            alert('its AM')
+        }
+        else {
+            alert('its PM')
+        }
+
+        // Q8 
+        var lastDay=new Date(2020,11,31); 
+        console.log(lastDay );
+
+        // Q9 
+        var date1 =new Date ("June 18, 2015");
+        var date2 =new Date ();
+         let difMil= date2-date1
+         console.log(difMil);
+        let converttoDay=Math.floor(difMil/(1000*60*60*24))
+         console.log(converttoDay);
+         alert('total number of days since 1st ramadan of 2015 is :'+converttoDay)
+         
+        //  Q13 
+        var user =prompt('enter your age ')
+        var date = new Date();
+       var  year = date.getFullYear();
+       birthYear=year-user
+       alert(`Your age : ${user} \n Your birth year : ${birthYear}`);
+       
+    //    Q14 
+    var name ='umer'
+
+    var monthsName=["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"]
+    var date= new Date()
+var month= monthsName[date.getMonth()];
+
+var number_of_unit=410
+var charge_per_unit=16
+var net_amount_payable=number_of_unit*charge_per_unit
+var late_charges =350
+var gross_amount_payable=net_amount_payable+late_charges
+document.write(`Name: ${name} <br> Month:${month} <br> Number of units:${number_of_unit} <br> Charges per unit: ${charge_per_unit}
+<br> Net Amount Payable (within Due Date): ${net_amount_payable} <br> Late Payment Surcharge: ${late_charges} <br> Gross Amount Payable (after Due Date): ${gross_amount_payable}`)
+
+    
+
+    </script>
+</body>
+
+</html>

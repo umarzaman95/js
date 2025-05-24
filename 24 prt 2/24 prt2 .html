@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+// chp 31-34
+        // Q1 
+        var dObj = new Date();
+
+        // Q2 
+        dStr = new Date().toString();
+
+        // Q3 
+        var d = new Date();
+        var day = d.getDay();
+        console.log(day);
+
+        //  Q4 
+        var time = new Date();
+        var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var curDay=dayNames[time.getDay()]
+        alert('today is ' +curDay)
+
+        // Q5 
+        var now = new Date();
+
+year = now.getFullYear();        
+month = now.getMonth();         
+date = now.getDate();            
+day = now.getDay();              
+hours = now.getHours();          
+minutes = now.getMinutes();      
+seconds = now.getSeconds();      
+milliseconds = now.getMilliseconds(); 
+
+// Q8 
+alert(new Date("Jan 1, 1980").getTime());
+
+// chp 35-37
+// Q1 
+function displayAlert() {
+}
+
+// Q2 
+function askName() {
+  userName = prompt("Enter name");
+}
+
+// Q3 
+function firstFunction() {
+  console.log("First function called");
+}
+
+function secondFunction() {
+  console.log("Second function called");
+}
+
+function callBothFunctions() {
+  firstFunction();
+  secondFunction();
+}
+// Q4 
+function displayName() {
+  const name = prompt("Enter name");
+  alert("Your name is: " + name);
+}
+
+displayName();
+
+// Q9 
+function addNumbers(a, b) {
+  return a + b;
+}
+ 
+// Q16 
+var letter="abcd"
+function repeatLetter(letter) {
+  return letter.repeat(10);
+}
+var res=repeatLetter(letter)
+console.log(res);
+
+
+    </script>
+</body>
+
+</html>

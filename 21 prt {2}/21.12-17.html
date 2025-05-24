@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // chp 12
+        // Q2 
+        // Taking input from user
+        var Name = prompt("Enter your name");
+        var mathMarks = +prompt("Enter Math marks");
+        var urduMarks = +prompt("Enter Urdu marks");
+        var englishMarks = +prompt("Enter English marks");
+        var computerMarks = +prompt("Enter Computer marks");
+
+        // Total and obtained marks
+        var totalMarks = 400;
+        var obtainMarks = mathMarks + urduMarks + englishMarks + computerMarks;
+        var percentage = (obtainMarks * 100) / totalMarks;
+
+        // console.log("Name:" + Name );
+        // console.log("Total Marks:" + totalMarks);
+        // console.log("Obtained Marks: " + obtainMarks);
+        // console.log("Percentage: " + percentage + "%");
+        document.write("Name:" + Name, "<br>")
+
+
+        document.write('Math:' + mathMarks, "<br>")
+        document.write('English:' + englishMarks, "<br>")
+        document.write('Computer:' + computerMarks, "<br>")
+        document.write('Urdu:' + urduMarks, "<br>")
+        document.write("Total Marks:" + totalMarks, "<br>")
+
+        document.write("Obtained Marks: " + obtainMarks, "<br>")
+
+        document.write("Percentage: " + percentage + "%", "<br>")
+
+        // Grade calculation
+        var grade;
+
+        if (percentage >= 91 && percentage <= 100) {
+            grade = 'A+';
+        } else if (percentage >= 80 && percentage <= 90) {
+            grade = 'A';
+        } else if (percentage >= 70 && percentage < 80) {
+            grade = 'B';
+        } else if (percentage >= 60 && percentage < 70) {
+            grade = 'C';
+        } else if (percentage >= 50 && percentage < 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+        document.write("Grade: " + grade, "<br>")
+        // console.log("Grade: " + grade);
+
+        // chp 15 
+        // Q1 
+        var array = []
+        // Q2 
+        var stringArray = ['ronaldo', 'messi', 'neymar', 'salah']
+        // Q4
+        var arr=['a','b','c','d','e','f','g']
+        console.log(arr.length);
+
+        // chp 16 
+        // Q2
+        var Alphabet = ["h", "i", "j", "k"];
+Alphabet.pop();
+console.log(Alphabet);
+
+// Q3
+var Alphabet = ["h", "i", "j", "k"];
+Alphabet.push(5);
+console.log(Alphabet);
+
+// chp 17 
+// Q1 
+var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+sizes.shift();
+console.log(sizes); 
+
+// Q2 
+var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+sizes.unshift(1, 2, 3);
+console.log(sizes);  
+
+        
+
+    </script>
+</body>
+
+</html>

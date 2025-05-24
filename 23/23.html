@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1 
+       var firstName=prompt('Enter  your first name')
+       var lastName=prompt('Enter  your last name')
+       var fullName=(firstName+lastName)
+       alert(`Assalamualikum ${fullName} Welcome`)
+       
+    // //    Q2 
+    var user=prompt('Enter your favorite mobile model')
+    alert(`my favorite mobile model is : ${user}\nlength :${user.length}`)
+
+    // Q3
+    let country='Pakistan'
+    var index=country.indexOf('n')
+    console.log(index);
+
+    // Q4 
+    var word ="Hello World"
+   index= word.lastIndexOf('l')
+   console.log(index);
+
+//    Q5 
+word ='pakistani'
+console.log(word[3]);
+
+// Q6
+   var firstName=prompt('Enter  your first name')
+       var lastName=prompt('Enter  your last name')
+       var fullName=(firstName+lastName)
+    //    i use + for concat 
+       alert('Assalamualikum ' + fullName + ' welcome' )
+   
+
+    // Q9 
+    let str = "472";
+  var num = Number(str);
+
+  let result = `
+    String value: ${str} (Type: ${typeof str})\n
+    Number value: ${num} (Type: ${typeof num})
+  `;
+  console.log(result);
+  
+//   Q10
+input=prompt('enter any fruit name')
+alert(input.toUpperCase())
+
+// Q12 
+var num=35.36
+console.log(num);
+
+d=num.toString()
+console.log(d);
+
+removeDot=d.replace('.','')
+console.log(removeDot);
+
+// Q14 
+var userInput=prompt('Enter the item you want').toLowerCase();
+ var array=['cake','apple pie','cookie','chps','patties']
+ let found;
+for(let item of array){
+  if (item.toLowerCase() === userInput) {
+        found = true;
+        
+    }
+  
+}
+if (found) {
+    alert("Yes, " + userInput + " is available in the list.");
+} else {
+    alert("Sorry, " + userInput + " is not available.");
+}  
+
+    </script>
+</body>
+</html>

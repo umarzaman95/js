@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Q2 
+                var num1 = prompt("Enter first number")
+                var num2 = prompt("Enter second number")
+
+         if (num1 > num2) {
+                    console.log(num1 > num2);
+                    console.log( num1 + "first wala number bara hai" );
+
+                }
+                else if  (num2 > num1){
+                    console.log(num2 > num1);
+                    console.log(num2 + "second wala number bara hai" );   
+                }
+        // Q3 
+        var num = prompt("enter any type of Number")
+        if (num>0){
+            console.log( num +" it is positive number");
+
+        }
+        else if( num< 0){
+            console.log(num + " it is negative number");
+
+        }
+        else if (num ==0){
+            console.log(num + " zero");
+
+        }
+        // Q4
+
+        let character = prompt("Enter a single character:");
+
+if (character.length === 1) {
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    if (vowels.includes(character)) {
+        console.log(character+" True - It is a vowel.");
+    } else {
+        console.log(character+" False - It is not a vowel.");
+    }
+} else {
+    console.log(character+" Please enter a single character only.");
+}
+// Q5 
+var correctPassword='myname1234'
+console.log(correctPassword);
+
+var userPassword =prompt("Enter your password" )
+if (!userPassword) {
+    alert('enter your password')
+}
+else if (userPassword===correctPassword) {
+    alert('correct! The password you entered matches the original password')
+}
+else  {
+    alert=('Incorerect password ')
+}
+// Q6 
+var greeting;
+var hour = prompt('enter hour ')
+if (hour < 18) {
+greeting = "Good day";
+console.log(greeting);
+
+}
+else{
+greeting = "Good evening";
+console.log(greeting);
+}
+
+    </script>
+</body>
+
+</html>
